@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:background="#E3F2FD"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alkamalik.tpddl_mera_auditor.Section_one"
+    tools:showIn="@layout/activity_section_one">
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true">
+
+    <ListView
+        android:id="@+id/lv_Section_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lv_Section_one"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+       <!-- <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginRight="180dp"
+            android:background="@android:drawable/ic_media_rew"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:background="@android:drawable/ic_media_ff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />-->
+    </RelativeLayout>
+   </LinearLayout>
+ <!--   </ScrollView>-->
+</RelativeLayout>
